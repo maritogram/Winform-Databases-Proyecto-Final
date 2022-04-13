@@ -33,10 +33,6 @@ namespace FinalData
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.clasesDataGridView = new System.Windows.Forms.DataGridView();
-            this.clasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.generalDataSet = new FinalData.GeneralDataSet();
-            this.tableAdapterManager = new FinalData.GeneralDataSetTableAdapters.TableAdapterManager();
-            this.clasesTableAdapter = new FinalData.GeneralDataSetTableAdapters.ClasesTableAdapter();
             this.códigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.asignaturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.crDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +43,10 @@ namespace FinalData
             this.viDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profesorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.generalDataSet = new FinalData.GeneralDataSet();
+            this.tableAdapterManager = new FinalData.GeneralDataSetTableAdapters.TableAdapterManager();
+            this.clasesTableAdapter = new FinalData.GeneralDataSetTableAdapters.ClasesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.clasesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clasesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.generalDataSet)).BeginInit();
@@ -98,41 +98,17 @@ namespace FinalData
             this.clasesDataGridView.Enabled = false;
             this.clasesDataGridView.EnableHeadersVisualStyles = false;
             this.clasesDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.clasesDataGridView.Location = new System.Drawing.Point(11, 11);
-            this.clasesDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.clasesDataGridView.Location = new System.Drawing.Point(15, 14);
+            this.clasesDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clasesDataGridView.MultiSelect = false;
             this.clasesDataGridView.Name = "clasesDataGridView";
             this.clasesDataGridView.ReadOnly = true;
             this.clasesDataGridView.RowHeadersVisible = false;
             this.clasesDataGridView.RowHeadersWidth = 51;
-            this.clasesDataGridView.Size = new System.Drawing.Size(871, 438);
+            this.clasesDataGridView.Size = new System.Drawing.Size(1390, 539);
             this.clasesDataGridView.TabIndex = 1;
             this.clasesDataGridView.TabStop = false;
             this.clasesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clasesDataGridView_CellContentClick);
-            // 
-            // clasesBindingSource
-            // 
-            this.clasesBindingSource.DataMember = "Clases";
-            this.clasesBindingSource.DataSource = this.generalDataSet;
-            // 
-            // generalDataSet
-            // 
-            this.generalDataSet.DataSetName = "GeneralDataSet";
-            this.generalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ClasesTableAdapter = null;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.EstudianteClaseTableAdapter = null;
-            this.tableAdapterManager.EstudianteTableAdapter = null;
-            this.tableAdapterManager.LoginTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = FinalData.GeneralDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // clasesTableAdapter
-            // 
-            this.clasesTableAdapter.ClearBeforeFill = true;
             // 
             // códigoDataGridViewTextBoxColumn
             // 
@@ -224,13 +200,38 @@ namespace FinalData
             this.profesorDataGridViewTextBoxColumn.ReadOnly = true;
             this.profesorDataGridViewTextBoxColumn.Width = 103;
             // 
+            // clasesBindingSource
+            // 
+            this.clasesBindingSource.DataMember = "Clases";
+            this.clasesBindingSource.DataSource = this.generalDataSet;
+            // 
+            // generalDataSet
+            // 
+            this.generalDataSet.DataSetName = "GeneralDataSet";
+            this.generalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.ClasesTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.EstudianteClaseTableAdapter = null;
+            this.tableAdapterManager.EstudianteTableAdapter = null;
+            this.tableAdapterManager.LoginTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = FinalData.GeneralDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // clasesTableAdapter
+            // 
+            this.clasesTableAdapter.ClearBeforeFill = true;
+            // 
             // Clases
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.clasesDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Clases";
             this.Text = "Clases";
             this.Load += new System.EventHandler(this.Clases_Load);

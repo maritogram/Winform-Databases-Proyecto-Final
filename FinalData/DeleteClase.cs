@@ -57,5 +57,34 @@ namespace FinalData
 
             MessageBox.Show("La clase ha sido eliminado correctamente :)");
         }
+
+        private void todo_Click(object sender, EventArgs e)
+        {
+            using (connection = new SqlConnection(ConnectionString))
+            using (SqlCommand command = new SqlCommand("DELETE FROM EstudianteClase ", connection))
+            {
+
+                connection.Open();
+
+                command.Parameters.AddWithValue("@Código", IDclas.Text);
+
+                command.ExecuteScalar();
+
+            }
+
+            using (connection = new SqlConnection(ConnectionString))
+            using (SqlCommand command = new SqlCommand("DELETE FROM Clases ", connection))
+            {
+
+                connection.Open();
+
+                command.Parameters.AddWithValue("@Código", IDclas.Text);
+
+                command.ExecuteScalar();
+
+            }
+
+            MessageBox.Show("Todas las clases han sido eliminadas correctamente.");
+        }
     }
 }

@@ -53,5 +53,11 @@ namespace FinalData
        
             }
         }
+
+        private void Inscribir_Load(object sender, EventArgs e)
+        {
+        
+
+        }
     }
 }

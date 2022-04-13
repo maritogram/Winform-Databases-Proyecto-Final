@@ -66,7 +66,26 @@ namespace FinalData
 
         }
 
+        private void todo_Click(object sender, EventArgs e)
+        {
+            using (connection = new SqlConnection(ConnectionString))
+            using (SqlCommand command = new SqlCommand("DELETE FROM EstudianteClase  ", connection))
+            {
+                connection.Open();
 
+                command.ExecuteScalar();
+            }
 
+            using (connection = new SqlConnection(ConnectionString))
+            using (SqlCommand command = new SqlCommand("DELETE FROM Estudiante ", connection))
+            {
+                connection.Open();
+
+                command.ExecuteScalar();
+            }
+
+            MessageBox.Show("Todos los estudiantes fueron eliminados con exito.");
+
+        }
     }
 }

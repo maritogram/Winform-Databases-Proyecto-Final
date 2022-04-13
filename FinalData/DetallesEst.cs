@@ -38,9 +38,10 @@ namespace FinalData
         // A REVISARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR       NOMBRE DE CLASE
         private void Populate()
         {
-            string query = "SELECT a.Asignatura FROM Clases b" +
-                "INNER JOIN EstudianteClase a on b.Código = a.Clases " +
-                "WHERE a.Estudiante = @Estudiante";
+            string query = "SELECT a.Código, a.Asignatura, a.Cr, a.Lun, a.Ma,a.Mi, a.Ju, a.Vi, a.Sa, a.Profesor  " +
+                "FROM Clases a " +
+                "INNER JOIN EstudianteClase b ON a.Código = b.Clase " +
+                "WHERE b.Estudiante = @Estudiante";
 
             using (connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(query, connection))
@@ -65,6 +66,11 @@ namespace FinalData
         private void Visualizar_Click(object sender, EventArgs e)
         {
             Populate();
+        }
+
+        private void datates_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -71,35 +71,36 @@ namespace FinalData
             this.datates.Enabled = false;
             this.datates.EnableHeadersVisualStyles = false;
             this.datates.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.datates.Location = new System.Drawing.Point(11, 11);
-            this.datates.Margin = new System.Windows.Forms.Padding(2);
+            this.datates.Location = new System.Drawing.Point(12, 179);
+            this.datates.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datates.MultiSelect = false;
             this.datates.Name = "datates";
             this.datates.ReadOnly = true;
             this.datates.RowHeadersVisible = false;
             this.datates.RowHeadersWidth = 51;
-            this.datates.Size = new System.Drawing.Size(300, 438);
+            this.datates.Size = new System.Drawing.Size(1436, 539);
             this.datates.TabIndex = 2;
             this.datates.TabStop = false;
+            this.datates.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datates_CellContentClick);
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(51)))), ((int)(((byte)(44)))));
             this.label3.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(329, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 27);
+            this.label3.Size = new System.Drawing.Size(277, 33);
             this.label3.TabIndex = 13;
             this.label3.Text = "ID del estudiante";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // telefono
             // 
-            this.telefono.Location = new System.Drawing.Point(350, 72);
+            this.telefono.Location = new System.Drawing.Point(40, 59);
+            this.telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.telefono.Name = "telefono";
-            this.telefono.Size = new System.Drawing.Size(166, 20);
+            this.telefono.Size = new System.Drawing.Size(220, 22);
             this.telefono.TabIndex = 12;
             this.telefono.TextChanged += new System.EventHandler(this.telefono_TextChanged);
             // 
@@ -110,10 +111,10 @@ namespace FinalData
             this.Visualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Visualizar.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Visualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Visualizar.Location = new System.Drawing.Point(354, 112);
-            this.Visualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.Visualizar.Location = new System.Drawing.Point(45, 108);
+            this.Visualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Visualizar.Name = "Visualizar";
-            this.Visualizar.Size = new System.Drawing.Size(158, 43);
+            this.Visualizar.Size = new System.Drawing.Size(211, 53);
             this.Visualizar.TabIndex = 14;
             this.Visualizar.Text = "Visualizar";
             this.Visualizar.UseVisualStyleBackColor = false;
@@ -121,14 +122,15 @@ namespace FinalData
             // 
             // DetallesEst
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1539, 573);
             this.Controls.Add(this.Visualizar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.telefono);
             this.Controls.Add(this.datates);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DetallesEst";
             this.Text = "DetallesEst";
             this.Load += new System.EventHandler(this.DetallesEst_Load);
