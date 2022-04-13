@@ -81,7 +81,7 @@ namespace FinalData
             this.datates.Size = new System.Drawing.Size(1436, 539);
             this.datates.TabIndex = 2;
             this.datates.TabStop = false;
-            this.datates.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datates_CellContentClick);
+
             // 
             // label3
             // 
@@ -102,7 +102,6 @@ namespace FinalData
             this.telefono.Name = "telefono";
             this.telefono.Size = new System.Drawing.Size(220, 22);
             this.telefono.TabIndex = 12;
-            this.telefono.TextChanged += new System.EventHandler(this.telefono_TextChanged);
             // 
             // Visualizar
             // 

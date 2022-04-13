@@ -139,6 +139,7 @@ namespace FinalData
             this.Retirar.Text = "Retirar estudiante de clase";
             this.Retirar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Retirar.UseVisualStyleBackColor = false;
+            this.Retirar.Click += new System.EventHandler(this.Retirar_Click);
             // 
             // inscribir
             // 

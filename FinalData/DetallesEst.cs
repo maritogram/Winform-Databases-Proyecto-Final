@@ -58,19 +58,12 @@ namespace FinalData
             }
         }
 
-        private void telefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void Visualizar_Click(object sender, EventArgs e)
         {
             Populate();
         }
 
-        private void datates_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

@@ -84,5 +84,10 @@ namespace FinalData
         {
             abrirPanelenForm(new DetallesEst());
         }
+
+        private void Retirar_Click(object sender, EventArgs e)
+        {
+            abrirPanelenForm(new EliminarInscripcion());
+        }
     }
 }

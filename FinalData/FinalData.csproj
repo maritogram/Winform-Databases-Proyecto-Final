@@ -97,6 +97,12 @@
     <Compile Include="DetallesEst.Designer.cs">
       <DependentUpon>DetallesEst.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarInscripcion.Designer.cs">
+      <DependentUpon>EliminarInscripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDataSet.cs">
       <DependentUpon>GeneralDataSet.xsd</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DetallesEst.resx">
       <DependentUpon>DetallesEst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarInscripcion.resx">
+      <DependentUpon>EliminarInscripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>
