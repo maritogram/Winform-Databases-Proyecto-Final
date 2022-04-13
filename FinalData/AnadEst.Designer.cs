@@ -42,30 +42,38 @@ namespace FinalData
             // 
             // edad
             // 
-            this.edad.Location = new System.Drawing.Point(14, 127);
+            this.edad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.edad.Location = new System.Drawing.Point(19, 156);
+            this.edad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.edad.Name = "edad";
-            this.edad.Size = new System.Drawing.Size(135, 20);
+            this.edad.Size = new System.Drawing.Size(179, 22);
             this.edad.TabIndex = 1;
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(14, 205);
+            this.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.email.Location = new System.Drawing.Point(19, 252);
+            this.email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(310, 20);
+            this.email.Size = new System.Drawing.Size(412, 22);
             this.email.TabIndex = 2;
             // 
             // telefono
             // 
-            this.telefono.Location = new System.Drawing.Point(14, 283);
+            this.telefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.telefono.Location = new System.Drawing.Point(19, 348);
+            this.telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.telefono.Name = "telefono";
-            this.telefono.Size = new System.Drawing.Size(166, 20);
+            this.telefono.Size = new System.Drawing.Size(220, 22);
             this.telefono.TabIndex = 3;
             // 
             // nombre
             // 
-            this.nombre.Location = new System.Drawing.Point(14, 50);
+            this.nombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.nombre.Location = new System.Drawing.Point(19, 62);
+            this.nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(310, 20);
+            this.nombre.Size = new System.Drawing.Size(412, 22);
             this.nombre.TabIndex = 4;
             // 
             // anadir
@@ -75,10 +83,10 @@ namespace FinalData
             this.anadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.anadir.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anadir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.anadir.Location = new System.Drawing.Point(455, 127);
-            this.anadir.Margin = new System.Windows.Forms.Padding(2);
+            this.anadir.Location = new System.Drawing.Point(607, 156);
+            this.anadir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.anadir.Name = "anadir";
-            this.anadir.Size = new System.Drawing.Size(116, 43);
+            this.anadir.Size = new System.Drawing.Size(155, 53);
             this.anadir.TabIndex = 7;
             this.anadir.Text = "Añadir";
             this.anadir.UseVisualStyleBackColor = false;
@@ -89,10 +97,9 @@ namespace FinalData
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(51)))), ((int)(((byte)(44)))));
             this.label4.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(11, 9);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(15, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 27);
+            this.label4.Size = new System.Drawing.Size(136, 33);
             this.label4.TabIndex = 8;
             this.label4.Text = "Nombre";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,10 +109,9 @@ namespace FinalData
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(51)))), ((int)(((byte)(44)))));
             this.label1.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(11, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 27);
+            this.label1.Size = new System.Drawing.Size(136, 33);
             this.label1.TabIndex = 9;
             this.label1.Text = "Edad";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,10 +121,9 @@ namespace FinalData
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(51)))), ((int)(((byte)(44)))));
             this.label2.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(11, 163);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(15, 201);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 27);
+            this.label2.Size = new System.Drawing.Size(136, 33);
             this.label2.TabIndex = 10;
             this.label2.Text = "Email";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,19 +133,18 @@ namespace FinalData
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(51)))), ((int)(((byte)(44)))));
             this.label3.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(11, 241);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(15, 297);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 27);
+            this.label3.Size = new System.Drawing.Size(136, 33);
             this.label3.TabIndex = 11;
             this.label3.Text = "Telefono";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AnadEst
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -151,6 +155,7 @@ namespace FinalData
             this.Controls.Add(this.email);
             this.Controls.Add(this.edad);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AnadEst";
             this.Text = "AnadEst";
             this.ResumeLayout(false);
