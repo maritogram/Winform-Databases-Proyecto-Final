@@ -81,7 +81,6 @@ namespace FinalData
             this.datates.Size = new System.Drawing.Size(1436, 539);
             this.datates.TabIndex = 2;
             this.datates.TabStop = false;
-
             // 
             // label3
             // 
@@ -98,7 +97,7 @@ namespace FinalData
             // telefono
             // 
             this.telefono.Location = new System.Drawing.Point(40, 59);
-            this.telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.telefono.Margin = new System.Windows.Forms.Padding(4);
             this.telefono.Name = "telefono";
             this.telefono.Size = new System.Drawing.Size(220, 22);
             this.telefono.TabIndex = 12;
@@ -129,7 +128,7 @@ namespace FinalData
             this.Controls.Add(this.telefono);
             this.Controls.Add(this.datates);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DetallesEst";
             this.Text = "DetallesEst";
             this.Load += new System.EventHandler(this.DetallesEst_Load);

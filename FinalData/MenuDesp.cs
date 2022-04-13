@@ -24,14 +24,6 @@ namespace FinalData
 
         //------------------------------
 
-
-
-
-
-
-
-        //Diferentes opciones: visualizar estudiantes, agregar, borrar, clases, etc..
-
         private void abrirPanelenForm(object childform)
         {
             if (this.Container.Controls.Count > 0)
@@ -88,6 +80,11 @@ namespace FinalData
         private void Retirar_Click(object sender, EventArgs e)
         {
             abrirPanelenForm(new EliminarInscripcion());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            abrirPanelenForm(new DetallesClas());
         }
     }
 }

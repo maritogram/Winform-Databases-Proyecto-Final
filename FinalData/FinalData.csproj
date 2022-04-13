@@ -91,6 +91,12 @@
     <Compile Include="DeleteEstudiante.Designer.cs">
       <DependentUpon>DeleteEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetallesClas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesClas.Designer.cs">
+      <DependentUpon>DetallesClas.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetallesEst.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteEstudiante.resx">
       <DependentUpon>DeleteEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesClas.resx">
+      <DependentUpon>DetallesClas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetallesEst.resx">
       <DependentUpon>DetallesEst.cs</DependentUpon>

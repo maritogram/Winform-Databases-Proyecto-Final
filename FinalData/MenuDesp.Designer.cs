@@ -30,7 +30,6 @@ namespace FinalData
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VerticalMenu = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -46,10 +45,12 @@ namespace FinalData
             this.Estudiantes = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Container = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.VerticalMenu.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -58,27 +59,16 @@ namespace FinalData
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1479, 71);
             this.panel2.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FinalData.Properties.Resources.logo_intec;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1479, 89);
             this.panel1.TabIndex = 8;
@@ -86,9 +76,10 @@ namespace FinalData
             // VerticalMenu
             // 
             this.VerticalMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.VerticalMenu.Controls.Add(this.button1);
+            this.VerticalMenu.Controls.Add(this.inscribir);
             this.VerticalMenu.Controls.Add(this.button2);
             this.VerticalMenu.Controls.Add(this.Retirar);
-            this.VerticalMenu.Controls.Add(this.inscribir);
             this.VerticalMenu.Controls.Add(this.ElimClas);
             this.VerticalMenu.Controls.Add(this.ElimNam);
             this.VerticalMenu.Controls.Add(this.Clase);
@@ -98,7 +89,7 @@ namespace FinalData
             this.VerticalMenu.Controls.Add(this.Estudiantes);
             this.VerticalMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.VerticalMenu.Location = new System.Drawing.Point(0, 71);
-            this.VerticalMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.VerticalMenu.Margin = new System.Windows.Forms.Padding(4);
             this.VerticalMenu.Name = "VerticalMenu";
             this.VerticalMenu.Size = new System.Drawing.Size(313, 608);
             this.VerticalMenu.TabIndex = 2;
@@ -112,8 +103,8 @@ namespace FinalData
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(-7, 463);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(-4, 386);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(343, 39);
             this.button2.TabIndex = 14;
@@ -131,10 +122,10 @@ namespace FinalData
             this.Retirar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Retirar.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Retirar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Retirar.Location = new System.Drawing.Point(-7, 414);
-            this.Retirar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Retirar.Location = new System.Drawing.Point(-5, 514);
+            this.Retirar.Margin = new System.Windows.Forms.Padding(4);
             this.Retirar.Name = "Retirar";
-            this.Retirar.Size = new System.Drawing.Size(327, 42);
+            this.Retirar.Size = new System.Drawing.Size(327, 36);
             this.Retirar.TabIndex = 13;
             this.Retirar.Text = "Retirar estudiante de clase";
             this.Retirar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -150,10 +141,10 @@ namespace FinalData
             this.inscribir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inscribir.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inscribir.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.inscribir.Location = new System.Drawing.Point(-5, 364);
-            this.inscribir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inscribir.Location = new System.Drawing.Point(-5, 471);
+            this.inscribir.Margin = new System.Windows.Forms.Padding(4);
             this.inscribir.Name = "inscribir";
-            this.inscribir.Size = new System.Drawing.Size(327, 42);
+            this.inscribir.Size = new System.Drawing.Size(327, 35);
             this.inscribir.TabIndex = 12;
             this.inscribir.Text = "Inscribir estudiante a clase";
             this.inscribir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,7 +161,7 @@ namespace FinalData
             this.ElimClas.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ElimClas.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ElimClas.Location = new System.Drawing.Point(-7, 292);
-            this.ElimClas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ElimClas.Margin = new System.Windows.Forms.Padding(4);
             this.ElimClas.Name = "ElimClas";
             this.ElimClas.Size = new System.Drawing.Size(309, 37);
             this.ElimClas.TabIndex = 11;
@@ -189,7 +180,7 @@ namespace FinalData
             this.ElimNam.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ElimNam.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ElimNam.Location = new System.Drawing.Point(-7, 247);
-            this.ElimNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ElimNam.Margin = new System.Windows.Forms.Padding(4);
             this.ElimNam.Name = "ElimNam";
             this.ElimNam.Size = new System.Drawing.Size(309, 37);
             this.ElimNam.TabIndex = 10;
@@ -208,7 +199,7 @@ namespace FinalData
             this.Clase.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clase.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Clase.Location = new System.Drawing.Point(-5, 199);
-            this.Clase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Clase.Margin = new System.Windows.Forms.Padding(4);
             this.Clase.Name = "Clase";
             this.Clase.Size = new System.Drawing.Size(309, 41);
             this.Clase.TabIndex = 9;
@@ -221,7 +212,7 @@ namespace FinalData
             // 
             this.panel4.Controls.Add(this.ClaseAdd);
             this.panel4.Location = new System.Drawing.Point(312, 62);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1231, 495);
             this.panel4.TabIndex = 8;
@@ -236,7 +227,7 @@ namespace FinalData
             this.ClaseAdd.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClaseAdd.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ClaseAdd.Location = new System.Drawing.Point(-308, 234);
-            this.ClaseAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClaseAdd.Margin = new System.Windows.Forms.Padding(4);
             this.ClaseAdd.Name = "ClaseAdd";
             this.ClaseAdd.Size = new System.Drawing.Size(309, 90);
             this.ClaseAdd.TabIndex = 7;
@@ -254,7 +245,7 @@ namespace FinalData
             this.EstuAdd.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EstuAdd.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.EstuAdd.Location = new System.Drawing.Point(-5, 153);
-            this.EstuAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EstuAdd.Margin = new System.Windows.Forms.Padding(4);
             this.EstuAdd.Name = "EstuAdd";
             this.EstuAdd.Size = new System.Drawing.Size(309, 39);
             this.EstuAdd.TabIndex = 6;
@@ -273,7 +264,7 @@ namespace FinalData
             this.Clases.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clases.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Clases.Location = new System.Drawing.Point(-5, 107);
-            this.Clases.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Clases.Margin = new System.Windows.Forms.Padding(4);
             this.Clases.Name = "Clases";
             this.Clases.Size = new System.Drawing.Size(309, 38);
             this.Clases.TabIndex = 5;
@@ -292,7 +283,7 @@ namespace FinalData
             this.Estudiantes.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Estudiantes.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Estudiantes.Location = new System.Drawing.Point(-5, 60);
-            this.Estudiantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Estudiantes.Margin = new System.Windows.Forms.Padding(4);
             this.Estudiantes.Name = "Estudiantes";
             this.Estudiantes.Size = new System.Drawing.Size(309, 39);
             this.Estudiantes.TabIndex = 4;
@@ -306,18 +297,48 @@ namespace FinalData
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(313, 71);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1166, 60);
             this.panel3.TabIndex = 3;
             // 
             // Container
             // 
-            this.Container.Location = new System.Drawing.Point(312, 132);
-            this.Container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Container.Location = new System.Drawing.Point(313, 132);
+            this.Container.Margin = new System.Windows.Forms.Padding(4);
             this.Container.Name = "Container";
             this.Container.Size = new System.Drawing.Size(1167, 555);
             this.Container.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(54)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(-5, 432);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(327, 31);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Detalles sobre una clase";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FinalData.Properties.Resources.logo_intec;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuDesp
             // 
@@ -329,15 +350,15 @@ namespace FinalData
             this.Controls.Add(this.VerticalMenu);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuDesp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Final";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuDesp_FormClosed);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.VerticalMenu.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,5 +381,6 @@ namespace FinalData
         private System.Windows.Forms.Button inscribir;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Retirar;
+        private System.Windows.Forms.Button button1;
     }
 }
